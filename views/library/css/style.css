@@ -1,0 +1,124 @@
+body{
+	overflow-x:hidden;
+}
+.st-container {
+    overflow-x: hidden;
+    margin-right: auto;
+}
+
+.st-navbar-font {
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+}
+
+#details_div {
+    padding-top: 100px;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.search_loader{
+	display:none;
+	padding-top:5px;
+}
+#details_div .loader{
+	display:none;
+}
+#search-error-msg{
+	display:none;
+}
+.page-loader{ background: #f9f9f9 none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;}
+.loader {
+    height: 8px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    width: 44px;
+}
+.dot {
+    background: #ccc none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+}
+.dot_1 {
+    animation: 1.5s linear 0s normal none infinite running animateDot1;
+    background: #f26f29 none repeat scroll 0 0;
+    left: 12px;
+}.dot_2 {
+    animation: 1.5s linear 0.5s normal none infinite running animateDot2;
+    left: 24px;
+}.dot_3 {
+    animation: 1.5s linear 0s normal none infinite running animateDot3;
+    left: 12px;
+}.dot_4 {
+    animation: 1.5s linear 0.5s normal none infinite running animateDot4;
+    left: 24px;
+}
+ @keyframes animateDot1 {
+0% {
+    transform: rotate(0deg) translateX(-12px);
+}
+25% {
+    transform: rotate(180deg) translateX(-12px);
+}
+75% {
+    transform: rotate(180deg) translateX(-12px);
+}
+100% {
+    transform: rotate(360deg) translateX(-12px);
+}
+}
+@keyframes animateDot2 {
+0% {
+    transform: rotate(0deg) translateX(-12px);
+}
+25% {
+    transform: rotate(-180deg) translateX(-12px);
+}
+75% {
+    transform: rotate(-180deg) translateX(-12px);
+}
+100% {
+    transform: rotate(-360deg) translateX(-12px);
+}
+}
+@keyframes animateDot3 {
+0% {
+    transform: rotate(0deg) translateX(12px);
+}
+25% {
+    transform: rotate(180deg) translateX(12px);
+}
+75% {
+    transform: rotate(180deg) translateX(12px);
+}
+100% {
+    transform: rotate(360deg) translateX(12px);
+}
+}
+@keyframes animateDot4 {
+0% {
+    transform: rotate(0deg) translateX(12px);
+}
+25% {
+    transform: rotate(-180deg) translateX(12px);
+}
+75% {
+    transform: rotate(-180deg) translateX(12px);
+}
+100% {
+    transform: rotate(-360deg) translateX(12px);
+}
+}
